@@ -14,7 +14,7 @@ const maxOfTwoNumbers = (x, y) => {
     }
   }
   
-  console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9));
+  console.log('Exercise 1 Result: ', maxOfTwoNumbers(3, 9));
 
 /*
 Exercise 2: maxOfThree
@@ -33,7 +33,7 @@ const maxOfThree = (x, y, z) => {
     return largest;
 }
 
-console.log('Exercise 2 Result:', maxOfThree(3, 1, 2));
+console.log('Exercise 2 Result: ', maxOfThree(3, 1, 2));
 
 /*
 Exercise 3: Insert at the Beginning
@@ -43,8 +43,25 @@ Write a function named isCharAVowel that takes a single character as an argument
 Complete Exercise 3 in the space below:
 */
 
+const isCharAVowel = (x) => {
+    x = x.toLowerCase();
+    if (x === 'a' || x === 'e' || x === 'i' || x === 'o' || x === 'u')
+        return true;
+    else return false;
+    
+    // // >> Added validation for practice <<
+    // x = x.toLowerCase();
+    // if (x === 'a' || x === 'e' || x === 'i' || x === 'o' || x === 'u') {
+    //     if (x.toLowerCase() === 'a' || 'e' || 'i' || 'o' || 'u')
+    //         return true;
+    //     else if (x.toLowerCase() === 'y')
+    //         return "only sometimes";
+    //     else return false;
+    // }
+    // else return "Invalid input"
+}
 
-console.log('Exercise 3 Result:', );
+console.log('Exercise 3 Result: ', isCharAVowel('u'));
 
 /*
 Exercise 4: sumArray
