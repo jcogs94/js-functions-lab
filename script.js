@@ -14,7 +14,7 @@ const maxOfTwoNumbers = (x, y) => {
     }
   }
   
-  console.log('Exercise 1 Result: ', maxOfTwoNumbers(3, 9));
+  console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9));
 
 /*
 Exercise 2: maxOfThree
@@ -33,7 +33,7 @@ const maxOfThree = (x, y, z) => {
     return largest;
 }
 
-console.log('Exercise 2 Result: ', maxOfThree(3, 1, 2));
+console.log('Exercise 2 Result:', maxOfThree(3, 1, 2));
 
 /*
 Exercise 3: Insert at the Beginning
@@ -58,10 +58,10 @@ const isCharAVowel = (x) => {
     //         return "only sometimes";
     //     else return false;
     // }
-    // else return "Invalid input"
+    // else return "Invalid input";
 }
 
-console.log('Exercise 3 Result: ', isCharAVowel('u'));
+console.log('Exercise 3 Result:', isCharAVowel('u'));
 
 /*
 Exercise 4: sumArray
@@ -82,9 +82,14 @@ Define a function called multiplyArray. It should take an array of numbers and r
 Complete Exercise 5 in the space below:
 */
 
+const multiplyArray = (x) => {
+    let result = x[0];
+    for (num = 1; num < x.length; num++)
+        result *= x[num];
+    return result;
+}
 
-
-console.log('Exercise 5 Result:', );
+console.log('Exercise 5 Result:', multiplyArray([3, 5, 10]));
 
 /*
 Exercise 6: reverseString
