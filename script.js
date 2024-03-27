@@ -77,7 +77,7 @@ const sumArray = (x) => {
     // console.log(x.instanceof Array);
     
     let result = x[0];
-    for (num = 1; num < x.length; num++)
+    for (let num = 1; num < x.length; num++)
         result += x[num];
     return result;
 }
@@ -98,7 +98,7 @@ const multiplyArray = (x) => {
     // console.log(x.instanceof Array);
     
     let result = x[0];
-    for (num = 1; num < x.length; num++)
+    for (let num = 1; num < x.length; num++)
         result *= x[num];
     return result;
 }
@@ -115,7 +115,7 @@ Complete Exercise 6 in the space below:
 
 const reverseString = (x) => {
     let result = '';
-    for (i = x.length - 1; i >= 0; i--) {
+    for (let i = x.length - 1; i >= 0; i--) {
         result += x[i];
     }
     return result;
@@ -133,7 +133,7 @@ Complete Exercise 7 in the space below:
 
 const longestStringInArray = (x) => {
     let result = x[0];
-    for (i = 1; i < x.length; i++) {
+    for (let i = 1; i < x.length; i++) {
         if (x[i].length > result.length)
             result = x[i];
     }
@@ -152,7 +152,7 @@ Complete Exercise 8 in the space below:
 
 const stringsLongerThan = (inputArray, num) => {
     let result = [];
-    for (i = 0; i < inputArray.length; i++) {
+    for (let i = 0; i < inputArray.length; i++) {
         if (inputArray[i].length > num)
             result.push(inputArray[i]);
     }
@@ -168,6 +168,7 @@ Challenge yourself with numArgs. This function should return the count of argume
 
 Complete Exercise 9 in the space below:
 */
+
 
 
 console.log('Exercise 9 Result:', );
