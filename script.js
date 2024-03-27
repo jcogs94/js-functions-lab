@@ -150,8 +150,16 @@ Write a function called stringsLongerThan. It takes an array of strings and a nu
 Complete Exercise 8 in the space below:
 */
 
+const stringsLongerThan = (inputArray, num) => {
+    let result = [];
+    for (i = 0; i < inputArray.length; i++) {
+        if (inputArray[i].length > num)
+            result.push(inputArray[i]);
+    }
+    return result;
+}
 
-console.log('Exercise 8 Result:', );
+console.log('Exercise 8 Result:', stringsLongerThan(['testing', 'this', 'function', 'for', 'now'], 3));
 
 /*
 Exercise 9: numArgs
