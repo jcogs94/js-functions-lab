@@ -113,9 +113,15 @@ Define a function called reverseString. It should take a string and return it wi
 Complete Exercise 6 in the space below:
 */
 
+const reverseString = (x) => {
+    let result = '';
+    for (i = x.length - 1; i >= 0; i--) {
+        result += x[i];
+    }
+    return result;
+}
 
-
-console.log('Exercise 6 Result:', );
+console.log('Exercise 6 Result:', reverseString('hello world'));
 
 /*
 Exercise 7: longestStringInArray
