@@ -131,8 +131,16 @@ Define a function called longestStringInArray. It should accept an array of stri
 Complete Exercise 7 in the space below:
 */
 
+const longestStringInArray = (x) => {
+    let result = x[0];
+    for (i = 1; i < x.length; i++) {
+        if (x[i].length > result.length)
+            result = x[i];
+    }
+    return result;
+}
 
-console.log('Exercise 7 Result:', );
+console.log('Exercise 7 Result:', longestStringInArray(['hello', 'problem', 'how', 'are', 'jumanjiiii']));
 
 /*
 Exercise 8: stringsLongerThan
