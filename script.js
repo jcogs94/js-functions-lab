@@ -71,8 +71,18 @@ Create a function called sumArray. It should take an array of numbers and return
 Complete Exercise 4 in the space below:
 */
 
+const sumArray = (x) => {
+    // validation practice
+    // console.log(typeof x);
+    // console.log(x.instanceof Array);
+    
+    let result = x[0];
+    for (num = 1; num < x.length; num++)
+        result += x[num];
+    return result;
+}
 
-console.log('Exercise 4 Result:', );
+console.log('Exercise 4 Result:', sumArray([5, 2, 3, 15]) );
 
 /*
 Exercise 5: multiplyArray
@@ -83,6 +93,10 @@ Complete Exercise 5 in the space below:
 */
 
 const multiplyArray = (x) => {
+    // validation practice
+    // console.log(typeof x);
+    // console.log(x.instanceof Array);
+    
     let result = x[0];
     for (num = 1; num < x.length; num++)
         result *= x[num];
