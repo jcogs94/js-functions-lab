@@ -43,7 +43,7 @@ Write a function named isCharAVowel that takes a single character as an argument
 Complete Exercise 3 in the space below:
 */
 
-const isCharAVowel = (x) => {
+const isCharAVowel = x => {
     x = x.toLowerCase();
     if (x === 'a' || x === 'e' || x === 'i' || x === 'o' || x === 'u')
         return true;
@@ -71,7 +71,7 @@ Create a function called sumArray. It should take an array of numbers and return
 Complete Exercise 4 in the space below:
 */
 
-const sumArray = (x) => {
+const sumArray = x => {
     // validation practice
     // console.log(typeof x);
     // console.log(x.instanceof Array);
@@ -92,7 +92,7 @@ Define a function called multiplyArray. It should take an array of numbers and r
 Complete Exercise 5 in the space below:
 */
 
-const multiplyArray = (x) => {
+const multiplyArray = x => {
     // validation practice
     // console.log(typeof x);
     // console.log(x.instanceof Array);
@@ -113,7 +113,7 @@ Define a function called reverseString. It should take a string and return it wi
 Complete Exercise 6 in the space below:
 */
 
-const reverseString = (x) => {
+const reverseString = x => {
     let result = '';
     for (let i = x.length - 1; i >= 0; i--) {
         result += x[i];
@@ -131,7 +131,7 @@ Define a function called longestStringInArray. It should accept an array of stri
 Complete Exercise 7 in the space below:
 */
 
-const longestStringInArray = (x) => {
+const longestStringInArray = x => {
     let result = x[0];
     for (let i = 1; i < x.length; i++) {
         if (x[i].length > result.length)
